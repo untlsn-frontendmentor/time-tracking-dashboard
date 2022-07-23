@@ -63,8 +63,7 @@ export default defineConfig({
     presetWind(),
     presetWebFonts({
       fonts: {
-        sans: 'Source Sans Pro:400,700',
-        manrope: 'Manrope:300,400',
+        sans: 'Rubik:300,400,500',
       },
     }),
     presetIcons({
