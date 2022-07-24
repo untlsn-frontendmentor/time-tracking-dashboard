@@ -4,3 +4,4 @@ plugins:
 rules:
   '@typescript-eslint/semi': [error, always]
   eqeqeq: off
+  vue/eqeqeq: off

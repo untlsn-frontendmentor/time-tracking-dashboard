@@ -3,7 +3,6 @@ import { defineConfig } from 'vite';
 import Vue from '@vitejs/plugin-vue';
 import Pages from 'vite-plugin-pages';
 import generateSitemap from 'vite-ssg-sitemap';
-import Components from 'unplugin-vue-components/vite';
 import AutoImport from 'unplugin-auto-import/vite';
 import Inspect from 'vite-plugin-inspect';
 import Unocss from 'unocss/vite';
@@ -37,11 +36,6 @@ export default defineConfig({
         'src/store',
       ],
       vueTemplate: true,
-    }),
-    Components({
-      extensions: ['vue'],
-      include: [/\.vue$/, /\.vue\?vue/],
-      dts: 'src/components.d.ts',
     }),
     Unocss(),
     Inspect(),
