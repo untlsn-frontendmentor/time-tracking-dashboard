@@ -1,7 +1,7 @@
 export enum Gap {
-  daily,
-  weekly,
-  monthly,
+  daily = 'daily',
+  weekly = 'weekly',
+  monthly = 'monthly',
 }
 
 const selectedGap = ref(Gap.weekly);

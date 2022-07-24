@@ -6,7 +6,7 @@ import GapButton from '~/components/GapButton.vue';
 
 <template>
   <article class="bg-primary-main rounded-xl w-60">
-    <header class="bg-box-blue rounded-xl p-(8 b16) flex flex-col gap-8">
+    <header class="bg-primary-intense rounded-xl p-(8 b16) flex flex-col gap-8">
       <img :src="avatar" alt="avatar" class="rounded-full border-2 size-20">
       <div>
         <h1 class="text-text text-sm">

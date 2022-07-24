@@ -12,7 +12,7 @@ const selected = computed(() => selectedGap.value == props.gap);
 <template>
   <button
     type="button"
-    :class="selected ? '' : 'opacity-65'"
+    :class="selected ? '' : 'transition-opacity opacity-65 hover:opacity-100'"
     @click="selectedGap = props.gap"
   >
     <slot />
