@@ -17,22 +17,24 @@ const lastName = computed(() => ({
 </script>
 
 <template>
-  <article class="background relative rounded-xl overflow-hidden">
+  <article class="background relative rounded-xl overflow-hidden max-lg:h-40">
     <i :class="icons[data.title]" class="text-4rem absolute -top-2 right-4" />
-    <div class="bg-primary-main p-8 rounded-xl absolute bottom-0 w-full">
+    <div class="bg-primary-main p-8 rounded-xl absolute bottom-0 w-full h-4/5">
       <div class="flex justify-between items-center">
         <p>{{ data.title }}</p>
         <button type="button">
           <i class="i-custom-ellipsis opacity-60 hover:opacity-100" />
         </button>
       </div>
-      <h1 class="text-5xl font-300 m-(t4 b-2)">
-        <HourPicker :time="frame.current" />
-      </h1>
-      <p>
-        <span>Last {{ lastName }} - </span>
-        <HourPicker :time="frame.previous" />
-      </p>
+      <div class="flex lg:flex-col max-lg:items-center justify-between gap-2 m-t-4">
+        <h1 class="lg:text-5xl text-3xl font-300">
+          <HourPicker :time="frame.current" />
+        </h1>
+        <p>
+          <span>Last {{ lastName }} - </span>
+          <HourPicker :time="frame.previous" />
+        </p>
+      </div>
     </div>
   </article>
 </template>

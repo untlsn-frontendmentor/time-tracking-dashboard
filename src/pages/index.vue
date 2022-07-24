@@ -9,7 +9,7 @@ const dataWithID = data.map(v => ({ ...v, id: nanoid() }));
 
 <template>
   <main class="min-h-screen grid place-items-center bg-primary-dark">
-    <div class="grid grid-cols-4 gap-8">
+    <div class="grid lg:grid-cols-4 gap-8 max-lg:w-90vw py-6">
       <UserBox class="row-span-2" />
       <TimeBlock v-for="time in dataWithID" :key="time.id" :data="time" />
     </div>
